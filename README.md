@@ -17,7 +17,7 @@ If you use the AppCrash-Analysis-Suite in an Active Directory managed environmen
 | HKLM\SOFTWARE\Microsoft\Windows\Windows Error Reporting\LocalDumps | 
 | HKLM\SOFTWARE\Microsoft\Windows\Windows Error Reporting\LocalDumps\DumpCount|  REG_DWORD|  3
 | HKLM\SOFTWARE\Microsoft\Windows\Windows Error Reporting\LocalDumps\DumpType|  REG_DWORD|  0x2
-| HKLM\SOFTWARE\Microsoft\Windows\Windows Error Reporting\LocalDumps\DumpFolder| REG_EXPAND_SZ | %LOCALAPPDATA%\CrashDumps
+| HKLM\SOFTWARE\Microsoft\Windows\Windows Error Reporting\LocalDumps\DumpFolder| REG_EXPAND_SZ | %<LOCALAPPDATA>%\CrashDumps
 
 ## Eventlog forwarding
 Each time an application crashes and a crash dump is being generated, a new event with Event-Id 1000 (Application Error) will be logged in the Windows Eventlog.
