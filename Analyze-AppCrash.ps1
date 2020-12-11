@@ -75,7 +75,7 @@ function Analyze-AppCrash
         # check if log file was generated
         if (!$(Test-Path -Path $WinDBGLogfile))
         {
-            Write-Warning "Crash Dump {0} cloud not be analyzed" -f $DumpFile.Name
+            Write-Warning ("Crash Dump {0} cloud not be analyzed" -f $DumpFile.Name)
         }
 
         # get dump analysis
@@ -86,12 +86,12 @@ function Analyze-AppCrash
 
         if (!$FailureImageName)
         {
-             Write-Warning "Crash Dump {0} does not contain a FAILURE_IMAGE_NAME" -f $DumpFile.Name
+             Write-Warning ("Crash Dump {0} does not contain a FAILURE_IMAGE_NAME" -f $DumpFile.Name)
         }
 
         if (!$ProcessName)
         {
-             Write-Warning "Crash Dump {0} does not contain a PROCESS_NAME" -f $DumpFile.Name
+             Write-Warning ("Crash Dump {0} does not contain a PROCESS_NAME" -f $DumpFile.Name)
         }
 
         $FailureImageName = $FailureImageName.Line.Replace("FAILURE_IMAGE_NAME:  ","")
