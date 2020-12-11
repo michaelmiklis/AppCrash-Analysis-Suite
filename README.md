@@ -16,7 +16,7 @@ If you use the AppCrash-Analysis-Suite in an Active Directory managed environmen
 | -------------| -----| ----- | 
 | HKLM\SOFTWARE\Microsoft\Windows\Windows Error Reporting\LocalDumps | 
 | HKLM\SOFTWARE\Microsoft\Windows\Windows Error Reporting\LocalDumps\DumpCount|  REG_DWORD|  3
-| HKLM\SOFTWARE\Microsoft\Windows\Windows Error Reporting\LocalDumps\DumpType|  REG_DWORD|  0x2
+| HKLM\SOFTWARE\Microsoft\Windows\Windows Error Reporting\LocalDumps\DumpType|  REG_DWORD|  2
 | HKLM\SOFTWARE\Microsoft\Windows\Windows Error Reporting\LocalDumps\DumpFolder| REG_EXPAND_SZ | %\<LOCALAPPDATA\>%\CrashDumps
 
 ## Eventlog forwarding
